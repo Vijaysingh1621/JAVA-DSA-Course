@@ -20,12 +20,13 @@ public class Binary_Search_05 {
     }
 
     public static void main(String[] args) {
-        Scanner vi = new Scanner(System.in);
-        System.out.println("Enter the key");
-        int key = vi.nextInt();
-        int numbers[] = { 23, 25, 43, 87, 56, 39 };
-        int index = BinarySearch(numbers, key);
-        System.out.println("index for the key :" + index);
+        try (Scanner vi = new Scanner(System.in)) {
+            System.out.println("Enter the key");
+            int key = vi.nextInt();
+            int numbers[] = { 23, 25, 43, 87, 56, 39 };
+            int index = BinarySearch(numbers, key);
+            System.out.println("index for the key :" + index);
+        }
     }
 
 }
