@@ -16,10 +16,11 @@ public class Decimal_to_Binary {
     }
 
     public static void main(String[] args) {
-        Scanner vi = new Scanner(System.in);
-        System.out.println("enter the number");
-        int n = vi.nextInt();
-        int bin = dectoBin(n);
-        System.out.println("binary of " + n + " : " + bin);
+        try (Scanner vi = new Scanner(System.in)) {
+            System.out.println("enter the number");
+            int n = vi.nextInt();
+            int bin = dectoBin(n);
+            System.out.println("binary of " + n + " : " + bin);
+        }
     }
 }

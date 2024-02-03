@@ -9,9 +9,10 @@ public class String_CharAt_Method {
     }
 
     public static void main(String[] args) {
-        Scanner vi = new Scanner(System.in);
-        System.out.println("enter name");
-        String str = vi.nextLine();
-        printletter(str);
+        try (Scanner vi = new Scanner(System.in)) {
+            System.out.println("enter name");
+            String str = vi.nextLine();
+            printletter(str);
+        }
     }
 }

@@ -21,10 +21,11 @@ public class String_Palindrome {
     }
 
     public static void main(String[] args) {
-        Scanner vi = new Scanner(System.in);
-        System.out.println("enter word");
-        String name = vi.nextLine();
-        System.out.println(ispalindrome(name));
+        try (Scanner vi = new Scanner(System.in)) {
+            System.out.println("enter word");
+            String name = vi.nextLine();
+            System.out.println(ispalindrome(name));
+        }
 
     }
 }

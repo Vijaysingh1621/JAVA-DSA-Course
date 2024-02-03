@@ -12,9 +12,10 @@ public class String_Palindrome_bigO_n {
         return true;
     }
     public static void main(String[] args) {
-        Scanner vi=new Scanner(System.in);
-        String name=vi.nextLine();
-        System.out.println(ispalindrome(name));
+        try (Scanner vi = new Scanner(System.in)) {
+            String name=vi.nextLine();
+            System.out.println(ispalindrome(name));
+        }
     }
     
 

@@ -17,12 +17,13 @@ public class Hollow_Rectangle_Pattern {
     }
 
     public static void main(String[] args) {
-        Scanner vi = new Scanner(System.in);
-        System.out.println("Enter colums");
-        int Rows = vi.nextInt();
-        System.out.println("Enter rows");
-        int Cols = vi.nextInt();
-        HollowRect(Rows, Cols);
+        try (Scanner vi = new Scanner(System.in)) {
+            System.out.println("Enter colums");
+            int Rows = vi.nextInt();
+            System.out.println("Enter rows");
+            int Cols = vi.nextInt();
+            HollowRect(Rows, Cols);
+        }
 
     }
 
