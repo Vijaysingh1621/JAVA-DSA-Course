@@ -1,0 +1,16 @@
+public class update_Ith_bit {
+
+    public static int clearIthBit(int n, int i){
+        int bitmask=1<<i;
+        return n & ~(bitmask);
+    }
+
+    public static int updateIthBit(int n , int i , int newBit){
+        n=clearIthBit(n, i);
+        int bitmask=newBit<<i;
+        return n | bitmask;
+    }
+    public static void main(String[] args) {
+        System.out.println(updateIthBit(10, 2, 1));
+    }
+}
